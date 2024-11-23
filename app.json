@@ -1,4 +1,5 @@
 
+
 {
   "name":"BWM-XMD",
   "description":"Best whatsapp bot developed by Ibrahim adams",
@@ -20,9 +21,33 @@
       "value":"no",
       "required":false
     },
+"AUDIO_REPLY":
+    {
+      "description":"Enter yes for your bot to audio reply",
+      "value":"yes",
+      "required":false
+    },
+"AUTO_SAVE_CONTACTS":
+    {
+      "description":"Enter yes for your bot to auto save numbers",
+      "value":"no",
+      "required":false
+    },
+"AUTO_REACT_STATUS":
+    {
+      "description":"Enter yes for your bot to auto react status",
+      "value":"yes",
+      "required":false
+    },
 "ANTICALL":
     {
       "description":"Enter yes for your bot to auto reject calls",
+      "value":"no",
+      "required":false
+    },
+"AUTO_REPLY":
+    {
+      "description":"Enter yes for your bot to auto reply message when offline",
       "value":"no",
       "required":false
     },
@@ -90,9 +115,9 @@
     "NUMERO_OWNER":
     {
       
-    "description":"Owner Number",   
-      "value":"254710772666,254739937062",
-    "required":false
+    "description":"Enter here the number that is hosting the bot Eg, 254xxxxxxx",   
+      "value":"",
+    "required":true
       
     },
     "OWNER_NAME":
@@ -124,7 +149,7 @@
     "value":"",
     "required": false
   },
-  "ANTI_DELETE_MESSAGE" : {
+  "ANTIDELETE" : {
     "description": "if you want to enable anti delete message put yes else put no",
     "value": "yes",
         "required": false

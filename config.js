@@ -23,14 +23,16 @@ module.exports = { session: process.env.SESSION_ID || '',
     ETAT : process.env.PRESENCE || '',
     CHATBOT : process.env.PM_CHATBOT || 'no',
     DP : process.env.STARTING_BOT_MESSAGE || "yes",
-    ADM : process.env.ADM || 'yes',
+    ANTIDELETE : process.env.ANTIDELETE || 'yes',
     ANTICALL : process.env.ANTICALL || 'yes',
                   AUTO_REACT : process.env.AUTO_REACT || 'yes',
-                  AUTO_GREY : process.env.AUTO_GREY || 'yes',
+                  AUTO_REACT_STATUS : process.env.AUTO_REACT_STATUS || 'yes',
+                  AUTO_REPLY : process.env.AUTO_REPLY || 'yes',
                   AUTO_READ : process.env.AUTO_READ || 'yes',
-                  AUTO_GHOST_STATUS : process.env.AUTO_GHOST_STATUS || 'yes',
+                  AUTO_SAVE_CONTACTS : process.env.AUTO_SAVE_CONTACTS || 'yes',
                   AUTO_REJECT_CALL : process.env.AUTO_REJECT_CALL || 'yes',
                   AUTO_BIO : process.env.AUTO_BIO || 'yes',
+                  AUDIO_REPLY : process.env.AUDIO_REPLY || 'yes',
     DATABASE_URL,
     DATABASE: DATABASE_URL === databasePath
         ? "postgresql://postgres:bKlIqoOUWFIHOAhKxRWQtGfKfhGKgmRX@viaduct.proxy.rlwy.net:47738/railway" : "postgresql://postgres:bKlIqoOUWFIHOAhKxRWQtGfKfhGKgmRX@viaduct.proxy.rlwy.net:47738/railway",
@@ -43,3 +45,4 @@ fs.watchFile(fichier, () => {
     delete require.cache[fichier];
     require(fichier);
 });
+
